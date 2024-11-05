@@ -1,7 +1,7 @@
 {
   // Disable the default formatter, use eslint instead
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
+  // "prettier.enable": false,
+  // "editor.formatOnSave": false,
 
   // Auto fix
   "editor.codeActionsOnSave": {
@@ -9,7 +9,7 @@
     "source.organizeImports": "never"
   },
 
-  "customKeybindings.disableFormatting": "true",
+  // "customKeybindings.disableFormatting": "true",
 
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
