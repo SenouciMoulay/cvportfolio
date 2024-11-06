@@ -43,7 +43,8 @@ export function AboutMeSection() {
 function AboutMeDescription() {
   return (
     <p>
-      A fullstack web developer, writing applications with{" "}
+      A fullstack web developer with over 7 years of experience, writing
+      applications with{" "}
       <TechWindowTrigger
         value="typescript"
         className="hover:text-[#007ACC] focus-visible:text-[#007ACC]"
