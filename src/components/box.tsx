@@ -19,8 +19,8 @@ const Cross = ({
 }) => {
   return (
     <div className={cn("absolute z-10", className)}>
-      <div className={`h-6 border-r translate-y-1/2 ${crossColor}`} />
-      <div className={`w-6 border-t translate-x-1/2 ${crossColor}`} />
+      <div className={`h-6 translate-y-1/2 border-r ${crossColor}`} />
+      <div className={`w-6 translate-x-1/2 border-t ${crossColor}`} />
     </div>
   );
 };
@@ -38,7 +38,7 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
       as,
       ...props
     },
-    ref
+    ref,
   ) => {
     const Comp = as || "div";
     return (
@@ -50,13 +50,13 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
         <>
           {!!crossTopLeft && (
             <Cross
-              className="top-0 left-0 -translate-x-full -translate-y-full"
+              className="left-0 top-0 -translate-x-full -translate-y-full"
               crossColor={crossColor}
             />
           )}
           {!!crossTopRight && (
             <Cross
-              className="top-0 right-0 translate-x-px -translate-y-full"
+              className="right-0 top-0 -translate-y-full translate-x-px"
               crossColor={crossColor}
             />
           )}
@@ -76,5 +76,5 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
         </>
       </Comp>
     );
-  }
+  },
 );

@@ -1,0 +1,85 @@
+import me from "@/../public/me.jpeg";
+import { Box } from "@/components/box";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
+import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
+import { TechWindowView } from "./about-me-interactions/tech-window-view";
+
+export function AboutMeSection() {
+  return (
+    <Box
+      as="section"
+      className="grid border-b border-t-0 duration-1000 fade-in-5 motion-safe:animate-in sm:grid-cols-5"
+    >
+      <div>
+        <Image
+          src={me}
+          width={192}
+          height={192}
+          alt="Dmitrii's face"
+          loading="lazy"
+          placeholder="blur"
+          className="block h-full w-full transition dark:brightness-75 dark:grayscale dark:hover:brightness-100 dark:hover:grayscale-0"
+        />
+      </div>
+      <TechWindowProvider>
+        <Box className="border-none p-4 sm:col-span-3">
+          <h2 className="text-xl">Who am i?</h2>
+          <AboutMeDescription />
+        </Box>
+        <Box
+          className="hidden border-b-0 border-l border-r-0 border-t-0 sm:block"
+          bl
+          br
+        >
+          <TechWindowView />
+        </Box>
+      </TechWindowProvider>
+    </Box>
+  );
+}
+
+function AboutMeDescription() {
+  return (
+    <p>
+      A fullstack web developer, writing applications with{" "}
+      <TechWindowTrigger
+        value="typescript"
+        className="hover:text-[#007ACC] focus-visible:text-[#007ACC]"
+      >
+        Typescript
+      </TechWindowTrigger>
+      {", "}
+      <TechWindowTrigger
+        value="react"
+        className="hover:text-[#61DAFB] focus-visible:text-[#61DAFB]"
+      >
+        React
+      </TechWindowTrigger>
+      {", "}
+      <TechWindowTrigger value="next">Next</TechWindowTrigger>
+      {", "}
+      <TechWindowTrigger
+        value="postgres"
+        className="hover:text-[#336791] focus-visible:text-[#336791]"
+      >
+        Postgres
+      </TechWindowTrigger>
+      {" and "}
+      <TechWindowTrigger
+        value="other"
+        className={cn(
+          "bg-gradient-to-r bg-clip-text text-primary transition-[background-color]",
+          "hover:from-[#12c2e9] hover:via-[#c471ed] hover:to-[#f64f59] hover:text-transparent",
+          "focus-visible:from-[#12c2e9] focus-visible:via-[#c471ed] focus-visible:to-[#f64f59] focus-visible:text-transparent",
+          "after:hover:bg-gradient-to-r after:hover:from-[#12c2e9] after:hover:via-[#c471ed] after:hover:to-[#f64f59]",
+          "after:focus-visible:bg-gradient-to-r after:focus-visible:from-[#12c2e9] after:focus-visible:via-[#c471ed] after:focus-visible:to-[#f64f59]",
+        )}
+      >
+        other cool tech
+      </TechWindowTrigger>
+      {"."}
+    </p>
+  );
+}

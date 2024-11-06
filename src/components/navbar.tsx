@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <Box
       as="nav"
-      className="flex justify-between items-center p-4 h-14 border-b w-container mx-auto sticky top-4 md:top-6 mt-4 md:mt-6 z-20 bg-background before:fixed before:w-svw before:h-4 md:before:h-6 before:top-0 before:left-0 before:bg-background before:-z-10"
+      className="sticky top-4 z-20 mx-auto mt-4 flex h-14 w-container items-center justify-between border-b bg-background p-4 before:fixed before:left-0 before:top-0 before:-z-10 before:h-4 before:w-svw before:bg-background md:top-6 md:mt-6 md:before:h-6"
       tl
       tr
       bl
