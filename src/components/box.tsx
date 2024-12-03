@@ -10,17 +10,23 @@ type BoxProps = React.ComponentPropsWithoutRef<"div"> & {
   as?: React.ElementType;
 };
 
-const Cross = ({
+export const BoxCross = ({
   className,
   crossColor,
+  small,
 }: {
   className?: string;
   crossColor?: string;
+  small?: boolean;
 }) => {
   return (
     <div className={cn("absolute z-10", className)}>
-      <div className={`h-6 translate-y-1/2 border-r ${crossColor}`} />
-      <div className={`w-6 translate-x-1/2 border-t ${crossColor}`} />
+      <div
+        className={`${small ? "h-4" : "h-6"} translate-y-1/2 border-r ${crossColor}`}
+      />
+      <div
+        className={`${small ? "w-4" : "w-6"} translate-x-1/2 border-t ${crossColor}`}
+      />
     </div>
   );
 };
@@ -49,26 +55,26 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
       >
         <>
           {!!crossTopLeft && (
-            <Cross
+            <BoxCross
               className="left-0 top-0 -translate-x-full -translate-y-full"
               crossColor={crossColor}
             />
           )}
           {!!crossTopRight && (
-            <Cross
+            <BoxCross
               className="right-0 top-0 -translate-y-full translate-x-px"
               crossColor={crossColor}
             />
           )}
           {children}
           {!!crossBottomLeft && (
-            <Cross
+            <BoxCross
               className="bottom-0 left-0 -translate-x-full translate-y-px"
               crossColor={crossColor}
             />
           )}
           {!!crossBottomRight && (
-            <Cross
+            <BoxCross
               className="bottom-0 right-0 translate-x-px translate-y-px"
               crossColor={crossColor}
             />
@@ -78,3 +84,19 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
     );
   },
 );
+
+export const BoxTitle = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithoutRef<"span"> & {
+    as?: React.ElementType;
+  }
+>(({ as, className, ...props }, ref) => {
+  const Comp = as || "span";
+  return (
+    <Comp
+      {...props}
+      ref={ref}
+      className={cn("inline-block text-lg font-bold", className)}
+    />
+  );
+});

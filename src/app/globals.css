@@ -74,4 +74,11 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  @keyframes subtle-pulse {
+    100% {
+      transform: scale(1.4);
+      opacity: 0.25;
+    }
+  }
 }

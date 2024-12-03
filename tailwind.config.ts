@@ -60,6 +60,9 @@ const config: Config = {
       width: {
         container: "var(--container-width)",
       },
+      animation: {
+        "subtle-pulse": "subtle-pulse 1.5s infinite",
+      },
     },
   },
   plugins: [tailwindcssAnimate],

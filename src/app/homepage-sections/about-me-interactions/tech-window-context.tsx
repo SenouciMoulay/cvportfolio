@@ -1,12 +1,10 @@
 "use client";
 
+import type { TechId } from "@/app/data/technologies";
 import React from "react";
 
 export type TechWindowContextType =
-  | "react"
-  | "typescript"
-  | "next"
-  | "postgres"
+  | Extract<TechId, "react" | "typescript" | "nextjs" | "postgres">
   | "other"
   | null;
 
