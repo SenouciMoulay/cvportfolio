@@ -10,7 +10,7 @@ export function AboutMeSection() {
   return (
     <Box
       as="section"
-      className="grid border-b border-t-0 duration-1000 fade-in-5 motion-safe:animate-in sm:grid-cols-5"
+      className="grid duration-1000 fade-in-5 motion-safe:animate-in sm:grid-cols-5"
     >
       <div>
         <Image

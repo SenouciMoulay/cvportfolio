@@ -1,5 +1,6 @@
 import { Box, BoxTitle } from "@/components/box";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { CheckCircle, DotIcon } from "lucide-react";
 import { TbLivePhoto } from "react-icons/tb";
@@ -21,17 +22,22 @@ export function ExperienceSection() {
 
 function Experience({ entry }: { entry: ExperienceEntry }) {
   return (
-    <li className="relative p-4">
+    <li
+      className={cn(
+        "relative p-4 last-of-type:before:border-transparent",
+        "before:absolute before:-left-px before:top-6 before:h-full before:border-l before:border-dashed",
+        {
+          "before:border-red-500": entry.endDate === undefined,
+          "before:border-green-400": entry.endDate !== undefined,
+        },
+      )}
+    >
       {entry.endDate === undefined ? (
-        <TbLivePhoto
-          className="absolute -left-2 top-5 animate-subtle-pulse text-red-500"
-          size={16}
-        />
+        <div className="absolute -left-2 top-5 grid size-4 place-items-center bg-background text-red-500">
+          <TbLivePhoto className="size-4 animate-subtle-pulse p-0.5" />
+        </div>
       ) : (
-        <CheckCircle
-          size={16}
-          className="absolute -left-0.5 top-7 size-0.5 scale-[8] text-green-400"
-        />
+        <CheckCircle className="absolute -left-2 top-5 size-4 bg-background p-0.5 text-green-400" />
       )}
       <div className="flex items-center justify-between">
         <ExperienceDates entry={entry} />
