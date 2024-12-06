@@ -10,7 +10,7 @@ import {
   useSpring,
   useTransform,
   useVelocity,
-} from "framer-motion";
+} from "motion/react";
 import React, { useRef } from "react";
 
 interface MarqueeAnimationProps {
