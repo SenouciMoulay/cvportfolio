@@ -35,7 +35,7 @@ export function AboutMeSection() {
         <Box className="col-span-2 grid place-items-center border-none p-4 sm:col-span-3">
           {/* <h2 className="text-xl">Hello! My name is Dmitrii.</h2> */}
           <div>
-            <AboutMeDescription />
+            <AboutMeDescriptionDull />
             <Contacts />
           </div>
         </Box>
@@ -51,7 +51,7 @@ export function AboutMeSection() {
   );
 }
 
-function AboutMeDescription() {
+function _AboutMeDescription() {
   return (
     <p>
       Fullstack web developer with 7+ years of experience, creating experiences
@@ -92,6 +92,15 @@ function AboutMeDescription() {
         other cool tech
       </TechWindowTrigger>
       {"."}
+    </p>
+  );
+}
+
+function AboutMeDescriptionDull() {
+  return (
+    <p className="text-base leading-tight">
+      Fullstack web developer with 7+ years of experience, creating experiences
+      with Typescript, React, Next.js, Postgres and other cool tech.
     </p>
   );
 }
