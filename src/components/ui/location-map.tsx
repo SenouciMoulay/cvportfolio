@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import DottedMap from "dotted-map";
 import { useRef, useState } from "react";
-import { PiHandTap } from "react-icons/pi";
+import { PiHandTap, PiMountainsDuotone, PiSmileyDuotone } from "react-icons/pi";
 
 const DOTS_PER_SIDE = 28;
 const map = new DottedMap({
@@ -69,9 +69,11 @@ export function LocationMap() {
         </span>
         <br />
         <p className="hidden text-sm leading-none sm:inline">
-          is a small principality between France and Spain 🏔. It's an extremely
-          beautiful country! It's also the{" "}
-          <span className="italic">country where I live now</span> :)
+          is a small principality between France and Spain. It's an extremely
+          beautiful country! <PiMountainsDuotone className="inline size-5" />{" "}
+          <br /> It's also the{" "}
+          <span className="italic">country where I live now</span>{" "}
+          <PiSmileyDuotone className="inline size-4 -translate-y-0.5" />
         </p>
         <p className="inline leading-tight sm:hidden">Yep! I live here! 🏔</p>
       </div>

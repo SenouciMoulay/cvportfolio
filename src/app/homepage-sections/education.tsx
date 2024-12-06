@@ -8,7 +8,9 @@ export function EducationSection() {
       <div className="grid w-full grid-cols-6 [&>*]:p-4">
         <Box className="col-span-6 border-l-0 sm:col-span-4" br tr>
           <div className="flex flex-col flex-nowrap items-start gap-1 whitespace-nowrap sm:flex-row sm:items-center">
-            <h3>Computer and Information Systems Expert</h3>
+            <h3 className="bg-gradient-to-r from-fuchsia-600 to-blue-600 bg-clip-text font-black text-transparent">
+              Computer and Information Systems Master
+            </h3>
             <a
               href="https://www.francecompetences.fr/recherche/rncp/35078/"
               target="_blank"

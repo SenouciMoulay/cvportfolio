@@ -17,7 +17,7 @@ export function Navbar() {
         bl
         br
       >
-        <Link href="/">
+        <Link href="/" className='text-lg'>
           <b>Kopenkin Dmitrii</b>
         </Link>
         <div className="flex items-center gap-1">
