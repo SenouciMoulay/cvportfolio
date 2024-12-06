@@ -1,7 +1,7 @@
 import me from "@/../public/me.jpeg";
 import { Box } from "@/components/box";
 import { Button } from "@/components/ui/button";
-import { LocationMap } from "@/components/ui/world-map";
+import { LocationMap } from "@/components/ui/location-map";
 import { cn } from "@/lib/utils";
 import { FileIcon } from "lucide-react";
 import Image from "next/image";
@@ -132,7 +132,7 @@ function Contacts() {
         </Button>
       </div>
       <Button variant="outline" size="sm" asChild>
-        <Link className="w-full items-center gap-1" href={`/+${CV_FILENAME}`}>
+        <Link className="w-full items-center gap-1" href={`/${CV_FILENAME}`}>
           <FileIcon className="size-4" />
           Resume
         </Link>

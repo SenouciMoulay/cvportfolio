@@ -95,7 +95,16 @@ export function LocationMap() {
           },
         )}
       >
-        <span className="font-bold">Andorra</span>
+        <span className="text-sm font-bold leading-tight sm:text-base">
+          Andorra
+        </span>
+        <br />
+        <p className="hidden text-sm leading-none sm:inline">
+          is a small principality between France and Spain 🏔. It's an extremely
+          beautiful country! It's also the{" "}
+          <span className="italic">country where I live now</span> :)
+        </p>
+        <p className="inline leading-tight sm:hidden">Yep! I live here! 🏔</p>
       </div>
     </div>
   );
