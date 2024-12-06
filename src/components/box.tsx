@@ -96,7 +96,7 @@ export const BoxTitle = React.forwardRef<
     <Comp
       {...props}
       ref={ref}
-      className={cn("inline-block text-lg font-bold", className)}
+      className={cn("inline-block font-bold", className)}
     />
   );
 });
