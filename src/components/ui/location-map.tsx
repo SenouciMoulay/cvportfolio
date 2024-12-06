@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useMutationObserver } from "@react-hooks-library/core";
 import DottedMap from "dotted-map";
 import { useRef, useState } from "react";
 import { PiHandTap } from "react-icons/pi";
@@ -27,36 +26,6 @@ export function LocationMap() {
   const ref = useRef<HTMLDivElement>(null);
   const [focused, setFocused] = useState(false);
   const [hovered, setHovered] = useState(false);
-  useMutationObserver(
-    ref,
-    (mutations) => {
-      for (const mutation of mutations) {
-        if (mutation.type !== "childList") {
-          continue;
-        }
-        const target = mutation.target as SVGElement;
-        target
-          .querySelectorAll('polyline:not([fill="current"])')
-          .forEach((_el) => {});
-        // TODO: show info abount andorra
-        // if (target.getAttribute("fill") === "current") {
-        //   continue;
-        // }
-        // if (target.getAttribute("data-label") !== null) {
-        //   continue;
-        // }
-        // target.setAttribute(
-        //   "data-label",
-        //   target.getAttribute("fill") ?? "Uhhh...",
-        // );
-      }
-    },
-    {
-      childList: true,
-      subtree: true,
-    },
-  );
-
   const showInfo = focused || hovered;
 
   return (

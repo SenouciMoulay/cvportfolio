@@ -11,6 +11,7 @@ import { TechWindowProvider } from "./about-me-interactions/tech-window-context"
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";
 
+// TODO: Cut of 2nd page, verify spelling and grammar
 const CV_FILENAME = "Dmitrii_Kopenkin_CV.pdf";
 
 export function AboutMeSection() {
