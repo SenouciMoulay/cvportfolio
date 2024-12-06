@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import {
   BiLogoMongodb,
   BiLogoNodejs,
@@ -8,7 +9,6 @@ import {
 import {
   SiAngular,
   SiAstro,
-  SiAzuredevops,
   SiExpress,
   SiGithubactions,
   SiGulp,
@@ -25,12 +25,13 @@ import {
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
+import { VscAzureDevops } from "react-icons/vsc";
 
 export interface TechnologyEntry {
   id: string;
   label: string;
   href: string;
-  icon: (props: React.SVGAttributes<SVGElement>) => JSX.Element;
+  icon: (props: React.SVGAttributes<SVGElement>) => ReactNode;
 }
 
 // prettier-ignore
@@ -44,7 +45,7 @@ export const technologies = [
   { id: "astro",        label: "Astro",         icon: SiAstro,           href: "https://astro.build" },
   { id: "hono",         label: "Hono",          icon: SiHono,            href: "https://hono.dev" },
   { id: "angular",      label: "Angular",       icon: SiAngular,         href: "https://angular.dev" },
-  { id: "azuredevops",  label: "Azure DevOps",  icon: SiAzuredevops,     href: "https://azure.microsoft.com/en-us/services/devops/" },
+  { id: "azuredevops",  label: "Azure DevOps",  icon: VscAzureDevops,    href: "https://azure.microsoft.com/en-us/services/devops/" },
   { id: "githubactions",label: "Github Actions",icon: SiGithubactions,   href: "https://github.com/features/actions" },
   { id: "gulp",         label: "Gulp",          icon: SiGulp,            href: "https://gulpjs.com" },
   { id: "lua",          label: "Lua",           icon: SiLua,             href: "https://www.lua.org" },

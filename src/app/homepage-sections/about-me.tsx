@@ -1,5 +1,6 @@
 import me from "@/../public/me.jpeg";
 import { Box } from "@/components/box";
+import { LocationMap } from "@/components/ui/world-map";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
@@ -9,23 +10,23 @@ import { TechWindowView } from "./about-me-interactions/tech-window-view";
 
 export function AboutMeSection() {
   return (
-    <Box
-      as="section"
-      className="grid duration-1000 fade-in-5 motion-safe:animate-in sm:grid-cols-5"
-    >
-      <div>
-        <Image
-          src={me}
-          width={192}
-          height={192}
-          alt="Dmitrii's face"
-          loading="lazy"
-          placeholder="blur"
-          className="block h-full w-full transition dark:brightness-75 dark:grayscale dark:hover:brightness-100 dark:hover:grayscale-0"
-        />
-      </div>
-      <TechWindowProvider>
-        <Box className="border-none p-4 sm:col-span-3">
+    <TechWindowProvider>
+      <Box as="section" className="grid grid-cols-3 sm:grid-cols-5">
+        <div>
+          <Image
+            src={me}
+            width={192}
+            height={192}
+            alt="Dmitrii's face"
+            loading="lazy"
+            placeholder="blur"
+            className="block aspect-square w-full transition dark:brightness-75 dark:grayscale dark:hover:brightness-100 dark:hover:grayscale-0"
+          />
+          <div className="block sm:hidden">
+            <LocationMap />
+          </div>
+        </div>
+        <Box className="col-span-2 border-none p-4 sm:col-span-3">
           <h2 className="text-xl">Hello! My name is Dmitrii.</h2>
           <AboutMeDescription />
           <Contacts />
@@ -37,8 +38,8 @@ export function AboutMeSection() {
         >
           <TechWindowView />
         </Box>
-      </TechWindowProvider>
-    </Box>
+      </Box>
+    </TechWindowProvider>
   );
 }
 
@@ -108,7 +109,7 @@ function Contacts() {
       </a>
       <a
         href="mailto:kopenkin.da@gmail.com"
-        className="hover:text-red-500w transition-all hover:-translate-y-1"
+        className="transition-all hover:-translate-y-1 hover:text-red-500"
       >
         <SiGmail className="size-5" />
       </a>
