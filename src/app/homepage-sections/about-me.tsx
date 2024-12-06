@@ -1,12 +1,17 @@
 import me from "@/../public/me.jpeg";
 import { Box } from "@/components/box";
+import { Button } from "@/components/ui/button";
 import { LocationMap } from "@/components/ui/world-map";
 import { cn } from "@/lib/utils";
+import { FileIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";
+
+const CV_FILENAME = "Dmitrii_Kopenkin_CV.pdf";
 
 export function AboutMeSection() {
   return (
@@ -90,29 +95,48 @@ function AboutMeDescription() {
 
 function Contacts() {
   return (
-    <div className="flex items-center gap-2 pt-2">
-      <a
-        className="transition-all hover:-translate-y-1 hover:text-white"
-        href="https://github.com/kopenkinda"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <SiGithub className="size-5" />
-      </a>
-      <a
-        className="transition-all hover:-translate-y-1 hover:text-blue-500"
-        href="https://linkedin.com/in/dmitrii-kopenkin"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <SiLinkedin className="size-5" />
-      </a>
-      <a
-        href="mailto:kopenkin.da@gmail.com"
-        className="transition-all hover:-translate-y-1 hover:text-red-500"
-      >
-        <SiGmail className="size-5" />
-      </a>
+    <div className="max-w-min space-y-0">
+      <div className="mb-2 flex items-center gap-2 border-b pb-2 pt-2">
+        <Button asChild variant="outline" size="icon-sm">
+          <a
+            href="https://github.com/kopenkinda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiGithub className="size-5" />
+          </a>
+        </Button>
+        <Button
+          asChild
+          variant="outline"
+          size="icon-sm"
+          className="hover:text-blue-500 focus-visible:text-blue-500"
+        >
+          <a
+            href="https://linkedin.com/in/dmitrii-kopenkin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiLinkedin className="size-5" />
+          </a>
+        </Button>
+        <Button
+          asChild
+          variant="outline"
+          size="icon-sm"
+          className="hover:text-red-500 focus-visible:text-red-500"
+        >
+          <a href="mailto:kopenkin.da@gmail.com">
+            <SiGmail className="size-5" />
+          </a>
+        </Button>
+      </div>
+      <Button variant="outline" size="sm" asChild>
+        <Link className="w-full items-center gap-1" href={`/+${CV_FILENAME}`}>
+          <FileIcon className="size-4" />
+          Resume
+        </Link>
+      </Button>
     </div>
   );
 }
