@@ -23,15 +23,17 @@ const id = () => counter++;
 export const experiences: ExperienceEntry[] = [
   {
     id: id(),
-    title: "Freelancer",
+    title: "Fullstack developer",
     startDate: new Date("2024-10-31"),
     company: {
       location: "Remote / Andorra",
-      name: undefined,
-      shortname: undefined,
+      name: "Freelance",
+      shortname: "Freelance",
       href: undefined,
     },
-    bulletpoints: [""],
+    bulletpoints: [
+      "Developed three full stack AI-enhanced applications. Integrated external systems, machine learning, and improved performance by 20% through DDD, CQRS, and API integrations.",
+    ],
     technologies: ["lua", "hono", "typescript", "react", "sqlite"],
   },
   {

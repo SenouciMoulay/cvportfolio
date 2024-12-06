@@ -1,4 +1,4 @@
-import me from "@/../public/me.jpeg";
+import me from "@/../public/me-2.jpeg";
 import { Box } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { LocationMap } from "@/components/ui/location-map";
@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { FileIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiGmail, SiLinkedin, SiTelegram } from "react-icons/si";
 import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";
@@ -31,10 +31,12 @@ export function AboutMeSection() {
             <LocationMap />
           </div>
         </div>
-        <Box className="col-span-2 border-none p-4 sm:col-span-3">
-          <h2 className="text-xl">Hello! My name is Dmitrii.</h2>
-          <AboutMeDescription />
-          <Contacts />
+        <Box className="col-span-2 grid place-items-center border-none p-4 sm:col-span-3">
+          {/* <h2 className="text-xl">Hello! My name is Dmitrii.</h2> */}
+          <div>
+            <AboutMeDescription />
+            <Contacts />
+          </div>
         </Box>
         <Box
           className="hidden border-b-0 border-l border-r-0 border-t-0 sm:block"
@@ -51,8 +53,8 @@ export function AboutMeSection() {
 function AboutMeDescription() {
   return (
     <p>
-      I am a fullstack web developer with over 7 years of experience, writing
-      applications with{" "}
+      Fullstack web developer with 7+ years of experience, creating experiences
+      with{" "}
       <TechWindowTrigger
         value="typescript"
         className="hover:text-[#007ACC] focus-visible:text-[#007ACC]"
@@ -96,7 +98,7 @@ function AboutMeDescription() {
 function Contacts() {
   return (
     <div className="max-w-min space-y-0">
-      <div className="mb-2 flex items-center gap-2 border-b pb-2 pt-2">
+      <div className="mb-2 flex items-center justify-between gap-2 border-b pb-2 pt-2">
         <Button asChild variant="outline" size="icon-sm">
           <a
             href="https://github.com/kopenkinda"
@@ -130,11 +132,25 @@ function Contacts() {
             <SiGmail className="size-5" />
           </a>
         </Button>
+        <Button
+          asChild
+          variant="outline"
+          size="icon-sm"
+          className="hover:text-blue-300 focus-visible:text-blue-300"
+        >
+          <a
+            href="https://t.me/leroifrancais"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiTelegram className="size-5" />
+          </a>
+        </Button>
       </div>
-      <Button variant="outline" size="sm" asChild>
+      <Button variant="shine" size="sm" asChild>
         <Link className="w-full items-center gap-1" href={`/${CV_FILENAME}`}>
           <FileIcon className="size-4" />
-          Resume
+          <span className="translate-y-px font-bold">Curriculum Vitae</span>
         </Link>
       </Button>
     </div>

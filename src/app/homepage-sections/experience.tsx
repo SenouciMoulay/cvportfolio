@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { Box, BoxTitle } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -71,12 +72,12 @@ const formatDate = (date: string | Date) => format(new Date(date), "MMM yyyy");
 const formatDateMobile = (date: string | Date) =>
   format(new Date(date), "yyyy");
 function ExperienceDates({ entry }: { entry: ExperienceEntry }) {
-  let result: JSX.Element;
+  let result: ReactNode;
   if (!entry.endDate) {
     result = (
       <>
-        <time className="hidden sm:inline">{formatDate(entry.startDate)}</time>
-        <time className="sm:hidden">{formatDateMobile(entry.startDate)}</time>
+        <time className="hidden sm:inline">{formatDate(entry.startDate)} - present</time>
+        <time className="sm:hidden">{formatDateMobile(entry.startDate)} - present</time>
       </>
     );
   } else if (entry.startDate.getTime() === entry.endDate.getTime()) {
