@@ -8,14 +8,14 @@ export function EducationSection() {
       <div className="grid w-full grid-cols-6 [&>*]:p-4">
         <Box className="col-span-6 border-l-0 sm:col-span-4" br tr>
           <div className="flex flex-col flex-nowrap items-start gap-1 whitespace-nowrap sm:flex-row sm:items-center">
-            <h3 className="bg-gradient-to-r from-fuchsia-600 to-blue-600 bg-clip-text font-black text-transparent">
+            <h3 className="bg-gradient-to-r from-fuchsia-600 to-blue-600 bg-clip-text font-black text-transparent print:text-foreground">
               Computer and Information Systems Master
             </h3>
             <a
               href="https://www.francecompetences.fr/recherche/rncp/35078/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background"
+              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background print:hidden"
             >
               RNCP 35078
               <ArrowUpRight className="size-4" />
@@ -32,7 +32,7 @@ export function EducationSection() {
               href="https://coursera.org/share/e80c8a8b0498f1bb918cae2abbd3907c"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background"
+              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background print:hidden"
             >
               Verify
               <ArrowUpRight className="size-4" />
@@ -49,7 +49,7 @@ export function EducationSection() {
               href="https://www.etsglobal.org/fr/en/digital-score-report/9D3BDAB4946D81D12AC1D209CC6F73DB0EAF21730F664DA26E24AA14FFD9F7FDWXFuemg1cUNINGg0aEFiVWp0dmZDd2VINjAzSm82b0JrT005T1JOYVBoQ2ZhWmpB"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background"
+              className="inline-flex items-center gap-0.5 rounded-sm border bg-foreground px-1 py-0.5 text-sm font-bold uppercase text-background print:hidden"
             >
               Verify
               <ArrowUpRight className="size-4" />

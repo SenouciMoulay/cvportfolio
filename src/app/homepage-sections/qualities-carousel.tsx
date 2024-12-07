@@ -17,7 +17,7 @@ const qualities = [
 
 export function QualitiesCarousel() {
   return (
-    <Box className="py-2">
+    <Box className="py-2 print:hidden">
       <MarqueeAnimation
         baseVelocity={0.5}
         direction="start-to-end"

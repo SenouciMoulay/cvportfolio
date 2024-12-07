@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <Box
       as="footer"
-      className="mx-auto mb-6 mt-auto flex h-14 w-container items-center justify-center gap-2 border-b border-t p-4"
+      className="mx-auto mb-6 mt-auto flex h-14 w-container items-center justify-center gap-2 border-b border-t p-4 print:hidden"
       tl
       tr
       bl

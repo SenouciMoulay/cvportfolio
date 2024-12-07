@@ -3,7 +3,7 @@ import { Box } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { LocationMap } from "@/components/ui/location-map";
 import { cn } from "@/lib/utils";
-import { FileIcon } from "lucide-react";
+import { FileIcon, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { SiGithub, SiGmail, SiLinkedin, SiTelegram } from "react-icons/si";
@@ -17,7 +17,10 @@ const CV_FILENAME = "Dmitrii_Kopenkin_CV.pdf";
 export function AboutMeSection() {
   return (
     <TechWindowProvider>
-      <Box as="section" className="grid grid-cols-3 sm:grid-cols-5">
+      <Box
+        as="section"
+        className="grid grid-cols-3 sm:grid-cols-5 print:border-t"
+      >
         <div>
           <Image
             src={me}
@@ -28,19 +31,29 @@ export function AboutMeSection() {
             placeholder="blur"
             className="block aspect-square w-full transition dark:brightness-75 dark:grayscale dark:hover:brightness-100 dark:hover:grayscale-0"
           />
-          <div className="block sm:hidden">
+          <div className="block sm:hidden print:hidden">
             <LocationMap />
           </div>
         </div>
-        <Box className="col-span-2 grid place-items-center border-none p-4 sm:col-span-3">
+        <Box className="col-span-2 grid place-items-center border-none p-4 sm:col-span-3 print:col-span-4">
           {/* <h2 className="text-xl">Hello! My name is Dmitrii.</h2> */}
           <div>
+            <b className="hidden text-lg font-bold leading-none print:flex print:gap-2">
+              Kopenkin Dmitrii
+              <span className="ml-2 inline-flex items-center gap-0.5 text-base font-normal">
+                <MapPin className="size-3" />
+                Andorra
+              </span>
+            </b>
+            <span className="hidden text-sm text-muted-foreground print:block">
+              kopenkin.da@gmail.com
+            </span>
             <AboutMeDescriptionDull />
             <Contacts />
           </div>
         </Box>
         <Box
-          className="hidden border-b-0 border-l border-r-0 border-t-0 sm:block"
+          className="hidden border-b-0 border-l border-r-0 border-t-0 sm:block print:hidden"
           bl
           br
         >
@@ -107,7 +120,7 @@ function AboutMeDescriptionDull() {
 
 function Contacts() {
   return (
-    <div className="max-w-min space-y-0">
+    <div className="max-w-min space-y-0 print:hidden">
       <div className="mb-2 flex items-center justify-between gap-2 border-b pb-2 pt-2">
         <Button asChild variant="outline" size="icon-sm">
           <a
