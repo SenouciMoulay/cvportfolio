@@ -32,9 +32,9 @@ export const experiences: ExperienceEntry[] = [
       href: undefined,
     },
     bulletpoints: [
-      "Developed three full stack AI-enhanced applications. Integrated external systems, machine learning, and improved performance by 20% through DDD, CQRS, and API integrations.",
+      "Created custom trading bot for a client, integrated into QUIK, with a dashboard for monitoring and managing trades.",
     ],
-    technologies: ["lua", "hono", "typescript", "react", "sqlite"],
+    technologies: ["hono", "lua", "react", "typescript", "sqlite"],
   },
   {
     id: id(),
@@ -48,9 +48,7 @@ export const experiences: ExperienceEntry[] = [
     endDate: new Date("2024-10-31"),
     title: "Fullstack Developer",
     bulletpoints: [
-      "",
-      // "Developed and implemented innovative solutions for 3 full-stack applications, incorporating Domain-Driven Design (DDD) and Command Query Responsibility Segregation (CQRS) methodologies. Connected external systems including a government-managed surgeon database, mailing lists, and analytics platforms via APIs to streamline data integration and improve application functionality.",
-      // "Implemented a pre-trained Keras model into the applications to enhance machine learning capabilities and optimize user experience. Increased application efficiency by 20% through the integration of AI-driven features.",
+      "Developed three full stack AI-enhanced applications. Integrated external systems, machine learning, and improved performance by 20% through DDD, CQRS, and API integrations.",
     ],
     technologies: ["typescript", "angular", "nodejs", "nestjs", "mongodb"],
   },
@@ -66,10 +64,7 @@ export const experiences: ExperienceEntry[] = [
     endDate: new Date("2023-08-01"),
     title: "Senior Mentor",
     bulletpoints: [
-      "",
-      // "Mentored over 150 first and second year students, providing guidance and support throughout their study program, resulting in a 90% retention rate and a 30% increase in academic performance.",
-      // "Created and graded exams for multiple courses, ensuring accuracy and fairness in evaluation processes, leading to an average exam score improvement of15% among students.",
-      // "Spearheaded the development of three internal software systems: an event organizing platform, automated grading system, and CTF platform, improving operational efficiency by 30% and reducing manual tasks by 50%.",
+      "Mentored over 150 first and second year students, providing guidance and support throughout their study program. Created and graded exams for multiple courses, ensuring accuracy and fairness in evaluation processes leading to an average exam score improvement of 15% among students.",
     ],
   },
   {
@@ -83,7 +78,10 @@ export const experiences: ExperienceEntry[] = [
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-05-01"),
     title: "Fullstack Developer",
-    bulletpoints: [""],
+    bulletpoints: [
+      'Developed a job "dating" organization platform for students and companies. Integrated a chat system, user profiles, and a job board.',
+      "Organized, managed and led the development of a CTF (Capture The Flag) event for students. Created a platform for challenges and scoring.",
+    ],
     technologies: [
       "typescript",
       "astro",
@@ -105,7 +103,9 @@ export const experiences: ExperienceEntry[] = [
     endDate: new Date("2021-05-01"),
     title: "Full-stack Intern",
     technologies: ["react", "nodejs", "express", "mongodb"],
-    bulletpoints: [""],
+    bulletpoints: [
+      "Optimized the search flow on the platform through database restructuring and algorithms, resulting in a 400% improvement in search performance.",
+    ],
   },
   {
     id: id(),
@@ -117,7 +117,10 @@ export const experiences: ExperienceEntry[] = [
     },
     startDate: new Date("2016-09-01"),
     endDate: new Date("2020-09-01"),
-    bulletpoints: [""],
+    bulletpoints: [
+      "Implemented custom seamless integration between Wordpress and IIKO systems to streamline online ordering processes, resulting in a 20% increase in customer orders",
+      "Developed multiple static and dynamic websites for clients, including e-commerce platforms and blogs",
+    ],
     title: "Freelancer",
     technologies: ["gulp", "react", "php", "javascript", "mysql", "wordpress"],
   },
