@@ -32,7 +32,7 @@ export const experiences: ExperienceEntry[] = [
       href: undefined,
     },
     bulletpoints: [
-      "Created custom trading bot for a client, integrated into QUIK, with a dashboard for monitoring and managing trades.",
+      "Created a custom trading bot for a client, integrated into QUIK, with a dashboard for monitoring and managing trades.",
     ],
     technologies: ["hono", "lua", "react", "typescript", "sqlite"],
   },
@@ -77,10 +77,10 @@ export const experiences: ExperienceEntry[] = [
     },
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-05-01"),
-    title: "Fullstack Developer",
+    title: "Lead Full-Stack Developer",
     bulletpoints: [
       'Developed a job "dating" organization platform for students and companies. Integrated a chat system, user profiles, and a job board.',
-      "Organized, managed and led the development of a CTF (Capture The Flag) event for students. Created a platform for challenges and scoring.",
+      "Organized, managed and led the development of a CTF (Capture The Flag) event for students. Created a platform for challenges and scoring. Assembled and managed a team of 5 developers, insuring on-time delivery of the platform.",
     ],
     technologies: [
       "typescript",
@@ -118,8 +118,8 @@ export const experiences: ExperienceEntry[] = [
     startDate: new Date("2016-09-01"),
     endDate: new Date("2020-09-01"),
     bulletpoints: [
-      "Implemented custom seamless integration between Wordpress and IIKO systems to streamline online ordering processes, resulting in a 20% increase in customer orders",
-      "Developed multiple static and dynamic websites for clients, including e-commerce platforms and blogs",
+      "Implemented custom seamless integration between Wordpress and IIKO systems to streamline online ordering processes, resulting in a 20% increase in customer orders.",
+      "Developed multiple static and dynamic websites for clients, including e-commerce platforms and blogs.",
     ],
     title: "Freelancer",
     technologies: ["gulp", "react", "php", "javascript", "mysql", "wordpress"],
