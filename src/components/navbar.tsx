@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Box } from "./box";
 import { ThemeToggle } from "./theme-toggle";
-import { Button } from "./ui/button";
 
 export function Navbar() {
   return (
