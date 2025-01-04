@@ -60,7 +60,22 @@ services:
     environment:
       - NODE_ENV=production
       # Add any other environment-specific configurations
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:main
+    labels:
+    - "traefik.enable=true"
+    - "traefik.http.routers.openwebui.rule=Host(`localhost`)"
+    - "traefik.http.routers.openwebui.entrypoints=web"
+    - "traefik.http.routers.openwebui-secure.rule=Host(`openwebui.kopenkin.tech`)"
+    - "traefik.http.routers.openwebui-secure.entrypoints=websecure"
+    - "traefik.http.routers.openwebui-secure.tls.certresolver=myresolver"
+    - "traefik.http.services.openwebui.loadbalancer.server.port=8080"
+    restart: unless-stopped
+    volumes:
+    - open-webui:/app/backend/data
 
 networks:
   default:
     name: myapp-network
+volumes:
+  open-webui:
