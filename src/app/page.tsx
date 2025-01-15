@@ -5,9 +5,9 @@ import { ExperienceSection } from "./homepage-sections/experience";
 import { QualitiesCarousel } from "./homepage-sections/qualities-carousel";
 
 export const metadata: Metadata = {
-  title: "Kopenkin Dmitrii - Fullstack Developer",
+  title: "Senouci Moulay - Fullstack Developer",
   description:
-    "Fullstack developer with a passion for learning and a strong focus on performance and user experience.",
+    "Fullstack developer with a keen eye for UI/UX design and a strong passion for creating seamless, user-focused experiences that prioritize performance and aesthetics.",
 };
 
 export default function Home() {

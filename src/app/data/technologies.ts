@@ -5,6 +5,7 @@ import {
   BiLogoPostgresql,
   BiLogoReact,
   BiLogoTypescript,
+  BiLogoJava
 } from "react-icons/bi";
 import {
   SiAngular,
@@ -20,10 +21,11 @@ import {
   SiNextdotjs,
   SiPhp,
   SiSanity,
-  SiSass,
+  SiSass, SiSpringboot,
   SiSqlite,
   SiTailwindcss,
   SiWordpress,
+  SiIonic, SiStripe, SiClerk, SiDocker, SiVite, SiVercel,
 } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
@@ -59,6 +61,14 @@ export const technologies = [
   { id: "sanity",       label: "Sanity",        icon: SiSanity,          href: "https://www.sanity.io" },
   { id: "mysql",        label: "MySQL",         icon: SiMysql,           href: "https://www.mysql.com" },
   { id: "javascript",   label: "JavaScript",    icon: SiJavascript,      href: "https://www.mysql.com" },
+  { id: "springboot",   label: "SpringBoot",    icon: SiSpringboot,      href: "https://spring.io/projects/spring-boot" },
+  { id: "ionic",   label: "Ionic",    icon: SiIonic,      href: "https://ionicframework.com" },
+  { id: "java",   label: "Java",    icon: BiLogoJava,      href: "https://docs.oracle.com/en/java/" },
+  { id: "stripe",   label: "Stripe",    icon: SiStripe,      href: "https://stripe.com/" },
+  { id: "clerk",   label: "Clerk",    icon: SiClerk,      href: "https://clerk.com" },
+  { id: "docker",   label: "Docker",    icon: SiDocker,      href: "https://docker.com" },
+  { id: "vite",   label: "Vite",    icon: SiVite,      href: "https://docker.com" },
+  { id: "vercel",   label: "Vercel",    icon: SiVercel,      href: "https://vercle.com" },
 ] as const satisfies TechnologyEntry[];
 
 type TechnologyItem = (typeof technologies)[number];

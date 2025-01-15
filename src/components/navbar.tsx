@@ -17,7 +17,7 @@ export function Navbar() {
         br
       >
         <Link href="/" className="text-lg">
-          <b>Kopenkin Dmitrii</b>
+          <b>Senouci Moulay</b>
         </Link>
         <div className="flex items-center gap-1">
           {/* <Button asChild variant="link" size="icon-sm" disabled>

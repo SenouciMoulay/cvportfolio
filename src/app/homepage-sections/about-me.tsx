@@ -1,4 +1,4 @@
-import me from "@/../public/me-2.jpeg";
+import me from "@/../public/me.jpg";
 import { Box } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { LocationMap } from "@/components/ui/location-map";
@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 import { FileIcon, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { SiGithub, SiGmail, SiLinkedin, SiTelegram } from "react-icons/si";
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";
 
 // TODO: Cut of 2nd page, verify spelling and grammar
-const CV_FILENAME = "Dmitrii_Kopenkin_CV.pdf";
+const CV_FILENAME = "CV-SENOUCI2025.pdf";
 
 export function AboutMeSection() {
   return (
@@ -26,7 +26,7 @@ export function AboutMeSection() {
             src={me}
             width={192}
             height={192}
-            alt="Dmitrii's face"
+            alt="Moulay's face"
             loading="lazy"
             placeholder="blur"
             className="block aspect-square w-full transition dark:brightness-75 dark:grayscale dark:hover:brightness-100 dark:hover:grayscale-0"
@@ -39,14 +39,14 @@ export function AboutMeSection() {
           {/* <h2 className="text-xl">Hello! My name is Dmitrii.</h2> */}
           <div>
             <b className="hidden text-lg font-bold leading-none print:flex print:gap-2">
-              Kopenkin Dmitrii
+              Senouci Moulay
               <span className="ml-2 inline-flex items-center gap-0.5 text-base font-normal">
                 <MapPin className="size-3" />
-                Andorra
+                Toulouse
               </span>
             </b>
             <span className="hidden text-sm text-muted-foreground print:block">
-              kopenkin.da@gmail.com
+              senouci.moulay@gmail.com
             </span>
             <AboutMeDescriptionDull />
             <Contacts />
@@ -67,7 +67,7 @@ export function AboutMeSection() {
 function _AboutMeDescription() {
   return (
     <p>
-      Fullstack web developer with 7+ years of experience, creating experiences
+      Fullstack web developer with 2+ years of experience, creating experiences
       with{" "}
       <TechWindowTrigger
         value="typescript"
@@ -112,8 +112,7 @@ function _AboutMeDescription() {
 function AboutMeDescriptionDull() {
   return (
     <p className="text-base leading-tight">
-      Fullstack web developer with 7+ years of experience, creating experiences
-      with Typescript, React, Next.js, Postgres and other cool tech.
+        Passionate fullstack web developer with 2+ years of experience, building dynamic and user-friendly applications with TypeScript, React, Next.js, Postgres, Java, and more.
     </p>
   );
 }
@@ -121,10 +120,10 @@ function AboutMeDescriptionDull() {
 function Contacts() {
   return (
     <div className="max-w-min space-y-0 print:hidden">
-      <div className="mb-2 flex items-center justify-between gap-2 border-b pb-2 pt-2">
+      <div className="mb-2 flex items-center gap-2 border-b pb-2 pt-2">
         <Button asChild variant="outline" size="icon-sm">
           <a
-            href="https://github.com/kopenkinda"
+            href="https://github.com/SenouciMoulay"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -138,7 +137,7 @@ function Contacts() {
           className="hover:text-blue-500 focus-visible:text-blue-500"
         >
           <a
-            href="https://linkedin.com/in/dmitrii-kopenkin"
+            href="https://www.linkedin.com/in/moulay-senouci-b90810235/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -151,22 +150,8 @@ function Contacts() {
           size="icon-sm"
           className="hover:text-red-500 focus-visible:text-red-500"
         >
-          <a href="mailto:kopenkin.da@gmail.com">
+          <a href="mailto:senouci.moulay@gmail.com">
             <SiGmail className="size-5" />
-          </a>
-        </Button>
-        <Button
-          asChild
-          variant="outline"
-          size="icon-sm"
-          className="hover:text-blue-300 focus-visible:text-blue-300"
-        >
-          <a
-            href="https://t.me/leroifrancais"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTelegram className="size-5" />
           </a>
         </Button>
       </div>
