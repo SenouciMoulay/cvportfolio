@@ -1,19 +1,22 @@
 import type { ReactNode } from "react";
 import {
+  BiLogoJava,
   BiLogoMongodb,
   BiLogoNodejs,
   BiLogoPostgresql,
   BiLogoReact,
   BiLogoTypescript,
-  BiLogoJava
 } from "react-icons/bi";
 import {
   SiAngular,
   SiAstro,
+  SiClerk,
+  SiDocker,
   SiExpress,
   SiGithubactions,
   SiGulp,
   SiHono,
+  SiIonic,
   SiJavascript,
   SiLua,
   SiMysql,
@@ -21,11 +24,14 @@ import {
   SiNextdotjs,
   SiPhp,
   SiSanity,
-  SiSass, SiSpringboot,
+  SiSass,
+  SiSpringboot,
   SiSqlite,
+  SiStripe,
   SiTailwindcss,
+  SiVercel,
+  SiVite,
   SiWordpress,
-  SiIonic, SiStripe, SiClerk, SiDocker, SiVite, SiVercel,
 } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
