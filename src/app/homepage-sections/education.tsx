@@ -40,7 +40,7 @@ export function EducationSection() {
             </a>
           </div>
           <span className="text-sm leading-none text-muted-foreground">
-            Toulouse Ynov Campus / <time>2022</time> - <time>2024</time>
+            University Toulouse Jean Jaures / <time>2019</time> - <time>2022</time>
           </span>
         </Box>
         <Box className="col-span-6 border-l-0 sm:col-span-4">
