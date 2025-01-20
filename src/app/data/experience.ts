@@ -39,8 +39,8 @@ export const experiences: ExperienceEntry[] = [
     id: id(),
     company: {
       location: "Hybrid / Toulouse, France",
-      name: undefined,
-      shortname: undefined,
+      name: "Air France",
+      shortname: "Air France",
       href: undefined,
     },
     startDate: new Date("2022-09-01"),
