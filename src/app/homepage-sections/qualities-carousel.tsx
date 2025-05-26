@@ -1,7 +1,7 @@
+import { DotIcon } from "lucide-react";
 import { Box } from "@/components/box";
 import MarqueeAnimation from "@/components/marquee-animation";
 import { interleave } from "@/lib/utils";
-import { DotIcon } from "lucide-react";
 
 const qualities = [
   "innovative thinker",

@@ -1,5 +1,5 @@
-import { Box, BoxTitle } from "@/components/box";
 import { ArrowUpRight } from "lucide-react";
+import { Box, BoxTitle } from "@/components/box";
 
 export function EducationSection() {
   return (

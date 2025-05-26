@@ -14,10 +14,13 @@ import {
   SiDocker,
   SiExpress,
   SiGithubactions,
+  SiGooglecloud,
   SiGulp,
   SiHono,
   SiIonic,
   SiJavascript,
+  SiKeycloak,
+  SiKubernetes,
   SiLua,
   SiMysql,
   SiNestjs,
@@ -32,9 +35,6 @@ import {
   SiVercel,
   SiVite,
   SiWordpress,
-  SiGooglecloud,
-  SiKubernetes,
-  SiKeycloak
 } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 

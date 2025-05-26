@@ -23,9 +23,9 @@ export function TechWindowProvider({
   const state = React.useState<TechWindowContextType>(null);
 
   return (
-    <TechWindowContext.Provider value={state}>
+    <TechWindowContext value={state}>
       {children}
-    </TechWindowContext.Provider>
+    </TechWindowContext>
   );
 }
 

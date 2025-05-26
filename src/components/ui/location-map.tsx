@@ -1,9 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import DottedMap from "dotted-map";
 import { useRef, useState } from "react";
 import {PiCityDuotone, PiHandTap, PiSmileyDuotone} from "react-icons/pi";
+import { cn } from "@/lib/utils";
 
 const DOTS_PER_SIDE = 28;
 const map = new DottedMap({
@@ -37,7 +37,7 @@ export function LocationMap() {
       onMouseLeave={() => setHovered(false)}
       tabIndex={0}
     >
-      {/* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */}
+      { }
       <div
         ref={ref}
         className={cn(

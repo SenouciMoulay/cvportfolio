@@ -1,12 +1,12 @@
+import { FileIcon, MapPin } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import me from "@/../public/me.jpg";
 import { Box } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { LocationMap } from "@/components/ui/location-map";
 import { cn } from "@/lib/utils";
-import { FileIcon, MapPin } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
 import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";

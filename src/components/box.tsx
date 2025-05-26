@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 type BoxProps = React.ComponentPropsWithoutRef<"div"> & {
   tl?: boolean;
@@ -31,20 +31,8 @@ export const BoxCross = ({
   );
 };
 
-export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
-  (
-    {
-      children,
-      className,
-      tl: crossTopLeft,
-      tr: crossTopRight,
-      bl: crossBottomLeft,
-      br: crossBottomRight,
-      crossColor = "border-border",
-      as,
-      ...props
-    },
-    ref,
+export const Box = (
+    { ref, children, className, tl: crossTopLeft, tr: crossTopRight, bl: crossBottomLeft, br: crossBottomRight, crossColor = "border-border", as, ...props }: BoxProps & { ref?: React.RefObject<HTMLDivElement | null> },
   ) => {
     const Comp = as || "div";
     return (
@@ -82,15 +70,11 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
         </>
       </Comp>
     );
-  },
-);
+  };
 
-export const BoxTitle = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentPropsWithoutRef<"span"> & {
+export const BoxTitle = ({ ref, as, className, ...props }: React.ComponentPropsWithoutRef<"span"> & {
     as?: React.ElementType;
-  }
->(({ as, className, ...props }, ref) => {
+  } & { ref?: React.RefObject<HTMLDivElement | null> }) => {
   const Comp = as || "span";
   return (
     <Comp
@@ -99,4 +83,4 @@ export const BoxTitle = React.forwardRef<
       className={cn("inline-block font-bold", className)}
     />
   );
-});
+};

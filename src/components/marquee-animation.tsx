@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import { wrap } from "@motionone/utils";
 import {
   motion,
@@ -12,6 +11,7 @@ import {
   useVelocity,
 } from "motion/react";
 import React, { useRef } from "react";
+import { cn } from "@/lib/utils";
 
 interface MarqueeAnimationProps {
   children: React.ReactElement;

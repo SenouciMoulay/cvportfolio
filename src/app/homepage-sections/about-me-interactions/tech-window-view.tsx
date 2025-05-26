@@ -1,7 +1,7 @@
 "use client";
 
-import { LocationMap } from "@/components/ui/location-map";
 import { Match, Switch } from "react-solid-flow";
+import { LocationMap } from "@/components/ui/location-map";
 import { useTechWindow } from "./tech-window-context";
 
 export function TechWindowView() {

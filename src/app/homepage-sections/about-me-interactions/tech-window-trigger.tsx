@@ -1,19 +1,17 @@
 "use client";
 
 import type { TechWindowContextType } from "./tech-window-context";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import React from "react";
-import { useTechWindow } from "./tech-window-context";
 
+import React from "react";
+import { Button } from "@/components/ui/button";
+
+import { cn } from "@/lib/utils";
+import { useTechWindow } from "./tech-window-context";
 export type TechWindowTriggerProps = React.ComponentPropsWithoutRef<"a"> & {
   value: NonNullable<TechWindowContextType>;
 };
 
-export const TechWindowTrigger = React.forwardRef<
-  React.ComponentRef<"a">,
-  TechWindowTriggerProps
->(({ children, value, className, ...props }, ref) => {
+export const TechWindowTrigger = ({ ref, children, value, className, ...props }: TechWindowTriggerProps & { ref?: React.RefObject<React.ComponentRef<"a"> | null> }) => {
   const [, setTechWindow] = useTechWindow();
   const handleIn = () => setTechWindow(value);
   const handleOut = () => setTechWindow(null);
@@ -39,4 +37,4 @@ export const TechWindowTrigger = React.forwardRef<
       </a>
     </Button>
   );
-});
+};

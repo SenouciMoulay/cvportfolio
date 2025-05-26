@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react';
-import { Box, BoxTitle } from "@/components/box";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { CheckCircle, DotIcon } from "lucide-react";
 import { TbLivePhoto } from "react-icons/tb";
+import { Box, BoxTitle } from "@/components/box";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { type ExperienceEntry, experiences } from "../data/experience";
 import { tech, type TechId } from "../data/technologies";
 
