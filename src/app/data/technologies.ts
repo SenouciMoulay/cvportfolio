@@ -32,6 +32,9 @@ import {
   SiVercel,
   SiVite,
   SiWordpress,
+  SiGooglecloud,
+  SiKubernetes,
+  SiKeycloak
 } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
@@ -75,6 +78,10 @@ export const technologies = [
   { id: "docker",   label: "Docker",    icon: SiDocker,      href: "https://docker.com" },
   { id: "vite",   label: "Vite",    icon: SiVite,      href: "https://docker.com" },
   { id: "vercel",   label: "Vercel",    icon: SiVercel,      href: "https://vercle.com" },
+  { id: "githubactions",label: "Github Actions",icon: SiGithubactions,   href: "https://github.com/features/actions" },
+  { id: "gcp",   label: "Google Cloud Platform",    icon: SiGooglecloud,      href: "https://console.cloud.google.com" },
+  { id: "kubernetes",   label: "Kubernetes",    icon: SiKubernetes,      href: "https://kubernetes.io" },
+  { id: "keycloak",   label: "Keycloak",    icon: SiKeycloak,      href: "https://www.keycloak.org" },
 ] as const satisfies TechnologyEntry[];
 
 type TechnologyItem = (typeof technologies)[number];

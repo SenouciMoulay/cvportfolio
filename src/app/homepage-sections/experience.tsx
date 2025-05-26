@@ -42,9 +42,16 @@ function Experience({ entry }: { entry: ExperienceEntry }) {
       )}
       <div className="flex items-center justify-between">
         <ExperienceDates entry={entry} />
-        <span className="inline-flex space-x-0.5">
+        <span className="inline-flex items-center space-x-0.5">
           {entry.company.name !== undefined && (
             <>
+              {entry.company.logo && (
+                <img 
+                  src={entry.company.logo} 
+                  alt={`${entry.company.name} logo`} 
+                  className={`${entry.company.logoSize || 'h-5'} w-auto object-contain`} 
+                />
+              )}
               <span className="hidden sm:inline">{entry.company.name}</span>
               <span className="sm:hidden">{entry.company.shortname}</span>
               <DotIcon />
@@ -106,14 +113,14 @@ function ExperienceDates({ entry }: { entry: ExperienceEntry }) {
 function ExperienceTechnologies({ techs }: { techs: TechId[] }) {
   const techlist = techs.map((id) => tech(id));
   return (
-    <div className="flex w-full gap-4 overflow-x-auto">
+    <div className="flex w-full flex-wrap gap-4 gap-y-0">
       {techlist.map((tech) => (
         <Button asChild key={tech.id} variant="link" className="p-0">
           <a
             href={tech.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 whitespace-nowrap text-muted-foreground"
+            className="inline-flex items-center gap-1 text-muted-foreground"
           >
             <tech.icon size={16} />
             {tech.label}

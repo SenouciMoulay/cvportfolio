@@ -112,7 +112,7 @@ function _AboutMeDescription() {
 function AboutMeDescriptionDull() {
   return (
     <p className="text-base leading-tight">
-        Passionate fullstack web developer with 2+ years of experience, building dynamic and user-friendly applications with TypeScript, React, Next.js, Postgres, Java, and more.
+        Passionate fullstack web developer with 2.5+ years of experience, building dynamic and user-friendly applications with Java, Springboot,TypeScript, Angular, Next.js, Postgres, and more.
     </p>
   );
 }
