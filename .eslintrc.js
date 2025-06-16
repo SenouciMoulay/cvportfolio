@@ -1,5 +1,7 @@
 module.exports = {
-  extends: ['next/core-web-vitals'],
+  root: true,
+  extends: ['next/core-web-vitals', 'eslint:recommended'],
+  plugins: ['react', 'react-hooks', 'perfectionist'],
   rules: {
     // Désactiver les règles qui posent problème
     'perfectionist/sort-imports': 'off',
@@ -7,5 +9,6 @@ module.exports = {
     'react/no-context-provider': 'off',
     'react/no-forward-ref': 'off',
     'react-dom/no-dangerously-set-innerhtml': 'off'
-  }
+  },
+  ignorePatterns: ['.next/', 'node_modules/', 'public/']
 };
