@@ -5,23 +5,26 @@ import { TbLivePhoto } from "react-icons/tb";
 import { Box, BoxTitle } from "@/components/box";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { type ExperienceEntry, experiences } from "../data/experience";
-import { tech, type TechId } from "../data/technologies";
+import { type ExperienceEntry, experiences } from "../../data/experience";
+import { tech, type TechId } from "../../data/technologies";
+import {getTranslations} from 'next-intl/server';
 
-export function ExperienceSection() {
+export async function ExperienceSection() {
+  const t = await getTranslations('Experience');
+  
   return (
     <Box tr tl br bl as="section">
-      <BoxTitle className="px-4 pt-4">Experience</BoxTitle>
+      <BoxTitle className="px-4 py-4 border-b border-neutral-200 dark:border-neutral-800 w-full">{t('title')}</BoxTitle>
       <ol>
         {experiences.map((entry) => (
-          <Experience key={entry.id} entry={entry} />
+          <Experience key={entry.id} entry={entry} t={t} />
         ))}
       </ol>
     </Box>
   );
 }
 
-function Experience({ entry }: { entry: ExperienceEntry }) {
+function Experience({ entry, t }: { entry: ExperienceEntry; t: any }) {
   return (
     <li
       className={cn(
@@ -41,7 +44,7 @@ function Experience({ entry }: { entry: ExperienceEntry }) {
         <CheckCircle className="absolute -left-2 top-5 size-4 bg-background p-0.5 text-green-400" />
       )}
       <div className="flex items-center justify-between">
-        <ExperienceDates entry={entry} />
+        <ExperienceDates entry={entry} t={t} />
         <span className="inline-flex items-center space-x-0.5">
           {entry.company.name !== undefined && (
             <>
@@ -52,21 +55,19 @@ function Experience({ entry }: { entry: ExperienceEntry }) {
                   className={`${entry.company.logoSize || 'h-5'} w-auto object-contain`} 
                 />
               )}
-              <span className="hidden sm:inline">{entry.company.name}</span>
-              <span className="sm:hidden">{entry.company.shortname}</span>
+              <span className="hidden sm:inline">{t(entry.companyKey)}</span>
+              <span className="sm:hidden">{t(entry.companyKey)}</span>
               <DotIcon />
             </>
           )}
           <span className="text-muted-foreground">
-            {entry.company.location}
+            {t(entry.locationKey)}
           </span>
         </span>
       </div>
-      <h3 className="text-lg font-bold">{entry.title}</h3>
+      <h3 className="text-lg font-bold">{t(entry.titleKey)}</h3>
       <ul>
-        {entry.bulletpoints.map((point) => (
-          <li key={point}>{point}</li>
-        ))}
+        <li>{t(entry.descriptionKey)}</li>
       </ul>
       {entry.technologies !== undefined && entry.technologies.length > 0 && (
         <ExperienceTechnologies techs={entry.technologies} />
@@ -78,13 +79,13 @@ function Experience({ entry }: { entry: ExperienceEntry }) {
 const formatDate = (date: string | Date) => format(new Date(date), "MMM yyyy");
 const formatDateMobile = (date: string | Date) =>
   format(new Date(date), "yyyy");
-function ExperienceDates({ entry }: { entry: ExperienceEntry }) {
+function ExperienceDates({ entry, t }: { entry: ExperienceEntry; t: any }) {
   let result: ReactNode;
   if (!entry.endDate) {
     result = (
       <>
-        <time className="hidden sm:inline">{formatDate(entry.startDate)} - present</time>
-        <time className="sm:hidden">{formatDateMobile(entry.startDate)} - present</time>
+        <time className="hidden sm:inline">{formatDate(entry.startDate)} - présent</time>
+        <time className="sm:hidden">{formatDateMobile(entry.startDate)} - présent</time>
       </>
     );
   } else if (entry.startDate.getTime() === entry.endDate.getTime()) {

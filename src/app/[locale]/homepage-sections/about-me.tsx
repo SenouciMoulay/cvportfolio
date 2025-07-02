@@ -10,11 +10,15 @@ import { cn } from "@/lib/utils";
 import { TechWindowProvider } from "./about-me-interactions/tech-window-context";
 import { TechWindowTrigger } from "./about-me-interactions/tech-window-trigger";
 import { TechWindowView } from "./about-me-interactions/tech-window-view";
+import {getTranslations, getLocale} from 'next-intl/server';
 
 // TODO: Cut of 2nd page, verify spelling and grammar
 const CV_FILENAME = "CV-SENOUCI2025.pdf";
 
-export function AboutMeSection() {
+export async function AboutMeSection() {
+  const t = await getTranslations('AboutMe');
+  const locale = await getLocale();
+  
   return (
     <TechWindowProvider>
       <Box
@@ -39,17 +43,17 @@ export function AboutMeSection() {
           {/* <h2 className="text-xl">Hello! My name is Dmitrii.</h2> */}
           <div>
             <b className="hidden text-lg font-bold leading-none print:flex print:gap-2">
-              Senouci Moulay
+              {t('name')}
               <span className="ml-2 inline-flex items-center gap-0.5 text-base font-normal">
                 <MapPin className="size-3" />
-                Toulouse
+                {t('location')}
               </span>
             </b>
             <span className="hidden text-sm text-muted-foreground print:block">
-              senouci.moulay@gmail.com
+              {t('email')}
             </span>
-            <AboutMeDescriptionDull />
-            <Contacts />
+            <AboutMeDescriptionDull t={t} />
+            <Contacts t={t} locale={locale} />
           </div>
         </Box>
         <Box
@@ -109,15 +113,15 @@ function _AboutMeDescription() {
   );
 }
 
-function AboutMeDescriptionDull() {
+function AboutMeDescriptionDull({ t }: { t: any }) {
   return (
     <p className="text-base leading-tight">
-        Passionate fullstack web developer with 2.5+ years of experience, building dynamic and user-friendly applications with Java, Springboot,TypeScript, Angular, Next.js, Postgres, and more.
+      {t('description')}
     </p>
   );
 }
 
-function Contacts() {
+function Contacts({ t, locale }: { t: any; locale: string }) {
   return (
     <div className="max-w-min space-y-0 print:hidden">
       <div className="mb-2 flex items-center gap-2 border-b pb-2 pt-2">
@@ -158,7 +162,7 @@ function Contacts() {
       <Button variant="shine" size="sm" asChild>
         <Link className="w-full items-center gap-1" href={`/${CV_FILENAME}`}>
           <FileIcon className="size-4" />
-          <span className="translate-y-px font-bold">Curriculum Vitae</span>
+          <span className="translate-y-px font-bold">{t('cv')}</span>
         </Link>
       </Button>
     </div>

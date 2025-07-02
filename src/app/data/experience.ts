@@ -5,6 +5,10 @@ export interface ExperienceEntry {
   startDate: Date;
   endDate?: Date;
   title: string;
+  titleKey: string; // Clé pour la traduction du titre
+  descriptionKey: string; // Clé pour la traduction de la description
+  companyKey: string; // Clé pour la traduction du nom de l'entreprise
+  locationKey: string; // Clé pour la traduction de la localisation
   company:
     | { location: string; name: string; shortname: string; href?: string; logo?: string; logoSize?: string }
     | {
@@ -26,6 +30,10 @@ export const experiences: ExperienceEntry[] = [
   {
     id: id(),
     title: "Fullstack developer",
+    titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.atchik_modernization",
+    companyKey: "companies.atchik_freelance",
+    locationKey: "locations.remote_toulouse",
     startDate: new Date("2025-02-01"),
     company: {
       location: "Remote / Toulouse",
@@ -42,6 +50,10 @@ export const experiences: ExperienceEntry[] = [
   {
     id: id(),
     title: "Fullstack developer",
+    titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.hasanatplus_platform",
+    companyKey: "companies.hasanatplus_freelance",
+    locationKey: "locations.remote_toulouse",
     startDate: new Date("2024-10-31"),
     endDate: new Date("2024-02-01"),
     company: {
@@ -58,6 +70,11 @@ export const experiences: ExperienceEntry[] = [
   },
   {
     id: id(),
+    title: "Fullstack Developer",
+    titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.air_france",
+    companyKey: "companies.air_france",
+    locationKey: "locations.hybrid_toulouse",
     company: {
       location: "Hybrid / Toulouse, France",
       name: "Air France",
@@ -71,11 +88,15 @@ export const experiences: ExperienceEntry[] = [
     bulletpoints: [
       "Developed web applications and iPad interfaces by gathering, analyzing, and translating business requirements into functional solutions, enhancing user experience and operational efficiency."
     ],
-    title: "Fullstack Developer",
     technologies: ["java", "angular", "ionic", "typescript", "postgres", ],
   },
   {
     id: id(),
+    title: "Fullstack Developer",
+    titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.pc_configurator",
+    companyKey: "companies.student_project",
+    locationKey: "locations.onsite_toulouse",
     company: {
       location: "On-Site / Toulouse, France",
       name: "Student Project",
@@ -86,11 +107,15 @@ export const experiences: ExperienceEntry[] = [
     endDate: new Date("2024-09-01"),
     bulletpoints: [
       "Created web application designed to allow both professional and individual users to configure a PC by selecting a component, after which the application suggests only compatible components based on the initial selection."    ],
-    title: "Fullstack Developer",
     technologies: ["nestjs", "react", "postgres", "typescript", "docker", "vite"],
   },
   {
     id: id(),
+    title: "Fullstack Developer",
+    titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.kaleidoscope",
+    companyKey: "companies.student_project",
+    locationKey: "locations.onsite_toulouse",
     company: {
       location: "On-Site / Toulouse, France",
       name: "Student Project",
@@ -101,7 +126,6 @@ export const experiences: ExperienceEntry[] = [
     endDate: new Date("2023-09-01"),
     bulletpoints: [
       "Developed and monitored an application with a modern UI/UX design, aimed at showcasing the most stunning cinematic masterpieces through captivating images from the films. The experience is centered around colors, highlighting various tones and shades, and is uniquely branded as 'Kaleidoscope'."   ],
-    title: "Fullstack Developer",
     technologies: ["nextjs", "postgres", "typescript", "vercel", "vite"],
   },
 ];

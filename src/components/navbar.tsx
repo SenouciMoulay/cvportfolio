@@ -1,10 +1,13 @@
-"use client";
-
-import Link from "next/link";
 import { Box } from "./box";
 import { ThemeToggle } from "./theme-toggle";
+import { LanguageSwitcher } from "./language-switcher";
+import {getTranslations, getLocale} from 'next-intl/server';
+import Link from 'next/link';
 
-export function Navbar() {
+export async function Navbar() {
+  const t = await getTranslations('Navigation');
+  const locale = await getLocale();
+  
   return (
     <>
       <div className="before:fixed before:left-0 before:right-0 before:top-0 before:z-[11] before:h-16 before:bg-background md:before:h-20 print:hidden" />
@@ -16,13 +19,14 @@ export function Navbar() {
         bl
         br
       >
-        <Link href="/" className="text-lg">
-          <b>Senouci Moulay</b>
+        <Link href={`/${locale}`} className="text-lg">
+          <b>{t('name')}</b>
         </Link>
         <div className="flex items-center gap-1">
           {/* <Button asChild variant="link" size="icon-sm" disabled>
             <Link href="/blog">Blog</Link>
           </Button> */}
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </Box>
