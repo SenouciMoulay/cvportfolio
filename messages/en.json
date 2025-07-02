@@ -1,0 +1,77 @@
+{
+  "HomePage": {
+    "title": "Senouci Moulay - Fullstack Developer",
+    "description": "Fullstack developer with a keen eye for UI/UX design and a strong passion for creating seamless, user-focused experiences that prioritize performance and aesthetics."
+  },
+  "AboutMe": {
+    "name": "Senouci Moulay",
+    "location": "Toulouse", 
+    "email": "senouci.moulay@gmail.com",
+    "description": "Passionate fullstack web developer with 2+ years of experience, building dynamic and user-friendly applications with TypeScript, React, Next.js, Postgres, Java, and more.",
+    "cv": "Curriculum Vitae"
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "freelance": "Freelance",
+    "positions": {
+      "fullstack_developer": "Fullstack Developer",
+      "fullstack_developer_student": "Fullstack Developer"
+    },
+    "descriptions": {
+      "donation_platform": "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices.",
+      "air_france": "Developed web applications and iPad interfaces by gathering, analyzing, and translating business requirements into functional solutions, enhancing user experience and operational efficiency.",
+      "pc_configurator": "Created web application designed to allow both professional and individual users to configure a PC by selecting a component, after which the application suggests only compatible components based on the initial selection.",
+      "kaleidoscope": "Developed and monitored an application with a modern UI/UX design, aimed at showcasing the most stunning cinematic masterpieces through captivating images from the films. The experience is centered around colors, highlighting various tones and shades, and is uniquely branded as 'Kaleidoscope'."
+    },
+    "companies": {
+      "air_france": "Air France",
+      "student_project": "Student Project"
+    },
+    "locations": {
+      "remote_toulouse": "Remote / Toulouse",
+      "hybrid_toulouse": "Hybrid / Toulouse, France", 
+      "onsite_toulouse": "On-Site / Toulouse, France"
+    }
+  },
+  "Education": {
+    "title": "Education",
+    "degrees": {
+      "computer_master": "Computer and Information Systems Master",
+      "mathematics_bachelor": "Mathematics and Computer Science Bachelor",
+      "docker_kubernetes": "Containers w/ Docker, Kubernetes & OpenShift",
+      "meta_frontend": "Meta Front-End Developer"
+    },
+    "schools": {
+      "toulouse_ynov": "Toulouse Ynov Campus",
+      "toulouse_jean_jaures": "University Toulouse Jean Jaures",
+      "ibm": "IBM",
+      "meta": "Meta"
+    },
+    "verify": "Verify"
+  },
+  "Skills": {
+    "title": "Technical Skills"
+  },
+  "Qualities": [
+    "innovative thinker",
+    "results and detail oriented",
+    "strong mentor and leader",
+    "adaptable",
+    "effective communicator",
+    "collaborative team player",
+    "problem solver",
+    "driven by efficiency",
+    "customer-focused"
+  ],
+  "Contact": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "Navigation": {
+    "name": "Senouci Moulay"
+  },
+  "Footer": {
+    "source": "source"
+  }
+} 

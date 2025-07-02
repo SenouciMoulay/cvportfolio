@@ -1,0 +1,77 @@
+{
+  "HomePage": {
+    "title": "Senouci Moulay - Développeur Fullstack",
+    "description": "Développeur fullstack passionné avec un œil attentif au design UI/UX et une forte passion pour créer des expériences fluides, centrées sur l'utilisateur, qui privilégient la performance et l'esthétique."
+  },
+  "AboutMe": {
+    "name": "Senouci Moulay",
+    "location": "Toulouse",
+    "email": "senouci.moulay@gmail.com",
+    "description": "Développeur web fullstack passionné avec plus de 2 ans d'expérience, créant des applications dynamiques et conviviales avec TypeScript, React, Next.js, Postgres, Java, et plus encore.",
+    "cv": "Curriculum Vitae"
+  },
+  "Experience": {
+    "title": "Expérience professionnelle",
+    "freelance": "Freelance",
+    "positions": {
+      "fullstack_developer": "Développeur Fullstack",
+      "fullstack_developer_student": "Développeur Fullstack"
+    },
+    "descriptions": {
+      "donation_platform": "Développement d'une plateforme de dons simplifiée permettant aux utilisateurs de financer plusieurs organisations via un seul paiement, avec allocation directe des fonds. Fourniture aux utilisateurs d'un accès à un tableau de bord avec représentations graphiques de leurs dons et possibilité de télécharger des factures.",
+      "air_france": "Développement d'applications web et d'interfaces iPad en collectant, analysant et traduisant les exigences métier en solutions fonctionnelles, améliorant l'expérience utilisateur et l'efficacité opérationnelle.",
+      "pc_configurator": "Création d'une application web permettant aux utilisateurs professionnels et particuliers de configurer un PC en sélectionnant un composant, après quoi l'application suggère uniquement des composants compatibles basés sur la sélection initiale.",
+      "kaleidoscope": "Développement et suivi d'une application avec un design UI/UX moderne, visant à présenter les chefs-d'œuvre cinématographiques les plus époustouflants à travers des images captivantes des films. L'expérience est centrée sur les couleurs, mettant en valeur diverses teintes et nuances, et est uniquement marquée comme 'Kaleidoscope'."
+    },
+    "companies": {
+      "air_france": "Air France",
+      "student_project": "Projet Étudiant"
+    },
+    "locations": {
+      "remote_toulouse": "Télétravail / Toulouse",
+      "hybrid_toulouse": "Hybride / Toulouse, France",
+      "onsite_toulouse": "Sur site / Toulouse, France"
+    }
+  },
+  "Education": {
+    "title": "Formation",
+    "degrees": {
+      "computer_master": "Master Systèmes d'Information et Informatique",
+      "mathematics_bachelor": "Licence Mathématiques et Informatique",
+      "docker_kubernetes": "Conteneurs avec Docker, Kubernetes & OpenShift",
+      "meta_frontend": "Développeur Front-End Meta"
+    },
+    "schools": {
+      "toulouse_ynov": "Toulouse Ynov Campus",
+      "toulouse_jean_jaures": "Université Toulouse Jean Jaurès",
+      "ibm": "IBM",
+      "meta": "Meta"
+    },
+    "verify": "Vérifier"
+  },
+  "Skills": {
+    "title": "Compétences techniques"
+  },
+  "Qualities": [
+    "penseur innovant",
+    "orienté résultats et détails",
+    "mentor et leader solide",
+    "adaptable",
+    "communicateur efficace",
+    "joueur d'équipe collaboratif",
+    "résolveur de problèmes",
+    "motivé par l'efficacité",
+    "centré sur le client"
+  ],
+  "Contact": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn", 
+    "email": "Email"
+  },
+  "Navigation": {
+    "name": "Senouci Moulay"
+  },
+  "Footer": {
+    "source": "source"
+  }
+} 

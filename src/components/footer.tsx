@@ -1,9 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
 import { Box } from "./box";
 import { Button } from "./ui/button";
+import {getTranslations} from 'next-intl/server';
 
-export function Footer() {
+export async function Footer() {
   const year = new Date().getFullYear();
+  const t = await getTranslations('Footer');
+  
   return (
     <Box
       as="footer"
@@ -20,7 +23,7 @@ export function Footer() {
           target="_blank"
           className="px-0"
         >
-          source
+          {t('source')}
           <ArrowUpRight size={16} className="ml-1" />
         </a>
       </Button>
