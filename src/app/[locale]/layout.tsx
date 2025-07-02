@@ -56,7 +56,13 @@ export default async function LocaleLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider 
+            attribute="class" 
+            defaultTheme="system" 
+            enableSystem
+            disableTransitionOnChange={true}
+            storageKey="cvportfolio-theme"
+          >
             <Navbar />
             {children}
             <Footer />

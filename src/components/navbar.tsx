@@ -1,5 +1,6 @@
 import { Box } from "./box";
 import { ThemeToggle } from "./theme-toggle";
+import { LanguageSwitcher } from "./language-switcher";
 import {getTranslations, getLocale} from 'next-intl/server';
 import Link from 'next/link';
 
@@ -25,6 +26,7 @@ export async function Navbar() {
           {/* <Button asChild variant="link" size="icon-sm" disabled>
             <Link href="/blog">Blog</Link>
           </Button> */}
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </Box>

@@ -14,7 +14,7 @@ export async function ExperienceSection() {
   
   return (
     <Box tr tl br bl as="section">
-      <BoxTitle className="px-4 pt-4">{t('title')}</BoxTitle>
+      <BoxTitle className="px-4 py-4 border-b border-neutral-200 dark:border-neutral-800 w-full">{t('title')}</BoxTitle>
       <ol>
         {experiences.map((entry) => (
           <Experience key={entry.id} entry={entry} t={t} />

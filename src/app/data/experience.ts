@@ -70,25 +70,6 @@ export const experiences: ExperienceEntry[] = [
   },
   {
     id: id(),
-    title: "Fullstack developer",
-    titleKey: "positions.fullstack_developer",
-    descriptionKey: "descriptions.donation_platform",
-    companyKey: "freelance",
-    locationKey: "locations.remote_toulouse",
-    startDate: new Date("2024-10-31"),
-    endDate: new Date("2025-02-01"),
-    company: {
-      location: "Remote / Toulouse",
-      name: "Freelance",
-      shortname: "Freelance",
-      href: "undefined",
-    },
-    bulletpoints: [
-      "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices."    ],
-    technologies: ["nextjs", "typescript", "tailwindcss", "postgres", "stripe", "clerk"],
-  },
-  {
-    id: id(),
     title: "Fullstack Developer",
     titleKey: "positions.fullstack_developer",
     descriptionKey: "descriptions.air_france",
