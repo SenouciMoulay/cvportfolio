@@ -51,6 +51,28 @@ export const experiences: ExperienceEntry[] = [
     id: id(),
     title: "Fullstack developer",
     titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.immocelia_platform",
+    companyKey: "companies.immocelia_freelance",
+    locationKey: "locations.remote_toulouse",
+    startDate: new Date("2025-06-01"),
+    endDate: new Date("2025-07-31"),
+    company: {
+      location: "Remote / Toulouse",
+      name: "ImmoCelia - Freelance",
+      shortname: "ImmoCelia - Freelance",
+      href: "undefined",
+      logo: "/immoceliaLight.png",
+      logoSize: "h-4",
+    },
+    bulletpoints: [
+      "Développement d'une plateforme immobilière complète avec Next.js 15, TypeScript, PostgreSQL et intégration API Whise. Implémentation d'un système d'authentification, gestion des favoris, SEO avancé et interface responsive optimisée pour l'agence."
+    ],
+    technologies: ["nextjs", "typescript", "tailwindcss", "postgres", "clerk", "vercel"],
+  },
+  {
+    id: id(),
+    title: "Fullstack developer",
+    titleKey: "positions.fullstack_developer",
     descriptionKey: "descriptions.hasanatplus_platform",
     companyKey: "companies.hasanatplus_freelance",
     locationKey: "locations.remote_toulouse",

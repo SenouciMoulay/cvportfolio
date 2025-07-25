@@ -18,6 +18,7 @@
       "fullstack_developer_student": "Fullstack Developer"
     },
     "descriptions": {
+      "immocelia_platform": "Design and development of a modern real estate platform for ImmoCelia agency: creation of a clean website integrating the Whise API for automatic synchronization of real estate listings. Implementation of a user authentication system with favorites management and optimized contact forms. Performance-oriented architecture with advanced technical SEO to maximize the agency's online visibility.",
       "atchik_modernization": "As part of a modernization and scalability effort, the project focused on migrating an existing monolithic application to a microservices architecture hosted on Google Cloud Platform. This included the design and deployment of cloud-native services using Docker for containerization, Kubernetes for orchestration, and GitHub Actions for continuous integration and delivery.",
       "hasanatplus_platform": "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices.",
       "donation_platform": "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices.",
@@ -26,6 +27,7 @@
       "kaleidoscope": "Developed and monitored an application with a modern UI/UX design, aimed at showcasing the most stunning cinematic masterpieces through captivating images from the films. The experience is centered around colors, highlighting various tones and shades, and is uniquely branded as 'Kaleidoscope'."
     },
     "companies": {
+      "immocelia_freelance": "ImmoCelia - Freelance",
       "atchik_freelance": "Atchik - Freelance",
       "hasanatplus_freelance": "HasanatPlus - Freelance",
       "air_france": "Air France",
