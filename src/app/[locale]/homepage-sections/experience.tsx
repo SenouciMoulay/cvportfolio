@@ -9,6 +9,29 @@ import { type ExperienceEntry, experiences } from "../../data/experience";
 import { tech, type TechId } from "../../data/technologies";
 import {getTranslations} from 'next-intl/server';
 
+// Composant pour les logos adaptatifs selon le thème
+function AdaptiveLogo({ lightLogo, darkLogo, alt, className }: {
+  lightLogo: string;
+  darkLogo: string;
+  alt: string;
+  className?: string;
+}) {
+  return (
+    <>
+      <img 
+        src={lightLogo} 
+        alt={alt} 
+        className={`${className} dark:hidden`} 
+      />
+      <img 
+        src={darkLogo} 
+        alt={alt} 
+        className={`${className} hidden dark:block`} 
+      />
+    </>
+  );
+}
+
 export async function ExperienceSection() {
   const t = await getTranslations('Experience');
   
@@ -49,11 +72,20 @@ function Experience({ entry, t }: { entry: ExperienceEntry; t: any }) {
           {entry.company.name !== undefined && (
             <>
               {entry.company.logo && (
-                <img 
-                  src={entry.company.logo} 
-                  alt={`${entry.company.name} logo`} 
-                  className={`${entry.company.logoSize || 'h-5'} w-auto object-contain`} 
-                />
+                entry.company.name === "ImmoCelia - Freelance" ? (
+                  <AdaptiveLogo
+                    lightLogo="/immoceliaLight.png"
+                    darkLogo="/immoceliaDark.png"
+                    alt={`${entry.company.name} logo`}
+                    className={`${entry.company.logoSize || 'h-5'} w-auto object-contain pr-1 pt-0.5`}
+                  />
+                ) : (
+                  <img 
+                    src={entry.company.logo} 
+                    alt={`${entry.company.name} logo`} 
+                    className={`${entry.company.logoSize || 'h-5'} w-auto object-contain`} 
+                  />
+                )
               )}
               <span className="hidden sm:inline">{t(entry.companyKey)}</span>
               <span className="sm:hidden">{t(entry.companyKey)}</span>

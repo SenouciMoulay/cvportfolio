@@ -18,6 +18,7 @@
       "fullstack_developer_student": "Développeur Fullstack"
     },
     "descriptions": {
+      "immocelia_platform": "Conception et développement d'une plateforme immobilière moderne pour l'agence ImmoCelia : création d'un site web épuré intégrant l'API Whise pour la synchronisation automatique des annonces immobilières. Implémentation d'un système d'authentification utilisateur avec gestion des favoris et formulaires de contact optimisés. Architecture orientée performance avec SEO technique avancé pour maximiser la visibilité en ligne de l'agence.",
       "atchik_modernization": "Dans le cadre d'un effort de modernisation et de mise à l'échelle, le projet s'est concentré sur la migration d'une application monolithique existante vers une architecture de microservices hébergée sur Google Cloud Platform. Cela comprenait la conception et le déploiement de services cloud-natifs utilisant Docker pour la conteneurisation, Kubernetes pour l'orchestration, et GitHub Actions pour l'intégration et la livraison continues.",
       "hasanatplus_platform": "Développement d'une plateforme de dons simplifiée permettant aux utilisateurs de financer plusieurs organisations via un seul paiement, avec allocation directe des fonds. Fourniture aux utilisateurs d'un accès à un tableau de bord avec représentations graphiques de leurs dons et possibilité de télécharger des factures.",
       "donation_platform": "Développement d'une plateforme de dons simplifiée permettant aux utilisateurs de financer plusieurs organisations via un seul paiement, avec allocation directe des fonds. Fourniture aux utilisateurs d'un accès à un tableau de bord avec représentations graphiques de leurs dons et possibilité de télécharger des factures.",
@@ -26,6 +27,7 @@
       "kaleidoscope": "Développement et suivi d'une application avec un design UI/UX moderne, visant à présenter les chefs-d'œuvre cinématographiques les plus époustouflants à travers des images captivantes des films. L'expérience est centrée sur les couleurs, mettant en valeur diverses teintes et nuances, et est uniquement marquée comme 'Kaleidoscope'."
     },
     "companies": {
+      "immocelia_freelance": "ImmoCelia - Freelance",
       "atchik_freelance": "Atchik - Freelance",
       "hasanatplus_freelance": "HasanatPlus - Freelance",
       "air_france": "Air France",
