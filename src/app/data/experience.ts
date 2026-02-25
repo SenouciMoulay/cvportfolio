@@ -31,10 +31,32 @@ export const experiences: ExperienceEntry[] = [
     id: id(),
     title: "Fullstack developer",
     titleKey: "positions.fullstack_developer",
+    descriptionKey: "descriptions.map_platform",
+    companyKey: "companies.map_freelance",
+    locationKey: "locations.remote_toulouse",
+    startDate: new Date("2025-09-01"),
+    company: {
+      location: "Remote / Toulouse",
+      name: "Map - Freelance",
+      shortname: "Map - Freelance",
+      href: "undefined",
+      logo: undefined,
+      logoSize: undefined,
+    },
+    bulletpoints: [
+      "Design, planning, and full-cycle development of a SaaS market intelligence platform for professionals. The project spans the entire development lifecycle, from UI/UX design to technical architecture and production deployment. The platform features an AI-powered automated monitoring system based on RAG (Retrieval-Augmented Generation) for market analysis, an interactive analytics dashboard with geospatial mapping and Excel exports, collaborative case management with real-time chat, and a visual workflow editor for data processing and orchestration. The application also includes user authentication and access management, along with full multilingual support."
+    ],
+    technologies: ["nextjs", "react", "typescript", "tailwindcss", "drizzle", "postgres", "anthropic", "voyageai", "pinecone", "bigquery", "maplibre", "clerk", "radixui", "vitest"],
+  },
+  {
+    id: id(),
+    title: "Fullstack developer",
+    titleKey: "positions.fullstack_developer",
     descriptionKey: "descriptions.atchik_modernization",
     companyKey: "companies.atchik_freelance",
     locationKey: "locations.remote_toulouse",
     startDate: new Date("2025-02-01"),
+    endDate: new Date("2025-09-01"),
     company: {
       location: "Remote / Toulouse",
       name: "Atchik - Freelance",
@@ -77,7 +99,7 @@ export const experiences: ExperienceEntry[] = [
     companyKey: "companies.hasanatplus_freelance",
     locationKey: "locations.remote_toulouse",
     startDate: new Date("2024-10-31"),
-    endDate: new Date("2024-02-01"),
+    endDate: new Date("2025-02-01"),
     company: {
       location: "Remote / Toulouse",
       name: "HasanatPlus - Freelance",
@@ -130,24 +152,5 @@ export const experiences: ExperienceEntry[] = [
     bulletpoints: [
       "Created web application designed to allow both professional and individual users to configure a PC by selecting a component, after which the application suggests only compatible components based on the initial selection."    ],
     technologies: ["nestjs", "react", "postgres", "typescript", "docker", "vite"],
-  },
-  {
-    id: id(),
-    title: "Fullstack Developer",
-    titleKey: "positions.fullstack_developer",
-    descriptionKey: "descriptions.kaleidoscope",
-    companyKey: "companies.student_project",
-    locationKey: "locations.onsite_toulouse",
-    company: {
-      location: "On-Site / Toulouse, France",
-      name: "Student Project",
-      shortname: "Student Project",
-      href: undefined,
-    },
-    startDate: new Date("2022-09-01"),
-    endDate: new Date("2023-09-01"),
-    bulletpoints: [
-      "Developed and monitored an application with a modern UI/UX design, aimed at showcasing the most stunning cinematic masterpieces through captivating images from the films. The experience is centered around colors, highlighting various tones and shades, and is uniquely branded as 'Kaleidoscope'."   ],
-    technologies: ["nextjs", "postgres", "typescript", "vercel", "vite"],
   },
 ];

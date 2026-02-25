@@ -19,14 +19,19 @@ import {
   SiHono,
   SiIonic,
   SiJavascript,
+  SiAnthropic,
+  SiDrizzle,
+  SiGooglebigquery,
   SiKeycloak,
   SiKubernetes,
   SiLua,
+  SiMaplibre,
   SiMysql,
   SiNestjs,
   SiNextdotjs,
   SiPhp,
   SiSanity,
+  SiRadixui,
   SiSass,
   SiSpringboot,
   SiSqlite,
@@ -34,8 +39,10 @@ import {
   SiTailwindcss,
   SiVercel,
   SiVite,
+  SiVitest,
   SiWordpress,
 } from "react-icons/si";
+import { HiSparkles } from "react-icons/hi2";
 import { VscAzureDevops } from "react-icons/vsc";
 
 export interface TechnologyEntry {
@@ -82,6 +89,14 @@ export const technologies = [
   { id: "gcp",   label: "Google Cloud Platform",    icon: SiGooglecloud,      href: "https://console.cloud.google.com" },
   { id: "kubernetes",   label: "Kubernetes",    icon: SiKubernetes,      href: "https://kubernetes.io" },
   { id: "keycloak",   label: "Keycloak",    icon: SiKeycloak,      href: "https://www.keycloak.org" },
+  { id: "drizzle",   label: "Drizzle ORM",    icon: SiDrizzle,      href: "https://orm.drizzle.team" },
+  { id: "anthropic",   label: "Claude AI",    icon: SiAnthropic,      href: "https://anthropic.com" },
+  { id: "bigquery",   label: "BigQuery",    icon: SiGooglebigquery,      href: "https://cloud.google.com/bigquery" },
+  { id: "maplibre",   label: "MapLibre GL",    icon: SiMaplibre,      href: "https://maplibre.org" },
+  { id: "radixui",   label: "Radix UI",    icon: SiRadixui,      href: "https://www.radix-ui.com" },
+  { id: "vitest",   label: "Vitest",    icon: SiVitest,      href: "https://vitest.dev" },
+  { id: "voyageai",   label: "Voyage AI",    icon: HiSparkles,      href: "https://www.voyageai.com" },
+  { id: "pinecone",   label: "Pinecone",    icon: HiSparkles,      href: "https://www.pinecone.io" },
 ] as const satisfies TechnologyEntry[];
 
 type TechnologyItem = (typeof technologies)[number];

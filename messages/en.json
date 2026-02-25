@@ -7,7 +7,7 @@
     "name": "Senouci Moulay",
     "location": "Toulouse", 
     "email": "senouci.moulay@gmail.com",
-    "description": "Passionate fullstack web developer with 2+ years of experience, building dynamic and user-friendly applications with TypeScript, React, Next.js, Postgres, Java, and more.",
+    "description": "Passionate fullstack web developer with 3 years of experience, building dynamic and user-friendly applications with Java, Springboot, TypeScript, Angular, Next.js, Postgres, and more.",
     "cv": "Curriculum Vitae"
   },
   "Experience": {
@@ -18,15 +18,17 @@
       "fullstack_developer_student": "Fullstack Developer"
     },
     "descriptions": {
+      "map_platform": "Design, planning, and full-cycle development of a SaaS market intelligence platform for professionals. The project spans the entire development lifecycle, from UI/UX design to technical architecture and production deployment. The platform features an AI-powered automated monitoring system based on RAG (Retrieval-Augmented Generation) for market analysis, an interactive analytics dashboard with geospatial mapping and Excel exports, collaborative case management with real-time chat, and a visual workflow editor for data processing and orchestration. The application also includes user authentication and access management, along with full multilingual support.",
       "immocelia_platform": "Design and development of a modern real estate platform for ImmoCelia agency: creation of a clean website integrating the Whise API for automatic synchronization of real estate listings. Implementation of a user authentication system with favorites management and optimized contact forms. Performance-oriented architecture with advanced technical SEO to maximize the agency's online visibility.",
       "atchik_modernization": "As part of a modernization and scalability effort, the project focused on migrating an existing monolithic application to a microservices architecture hosted on Google Cloud Platform. This included the design and deployment of cloud-native services using Docker for containerization, Kubernetes for orchestration, and GitHub Actions for continuous integration and delivery.",
       "hasanatplus_platform": "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices.",
       "donation_platform": "Developed a simplified donation platform enabling users to fund multiple organizations through a single payment, with direct allocation of funds. Provided users with access to a dashboard featuring graphical representations of their donations and the ability to download invoices.",
-      "air_france": "Developed web applications and iPad interfaces by gathering, analyzing, and translating business requirements into functional solutions, enhancing user experience and operational efficiency.",
+      "air_france": "Developed web applications and iPad interfaces using Java, TypeScript, Spring Boot, Angular, and Ionic. Applied agile methodologies (KANBAN) with tools like Jira and Confluence. Implemented unit and integration testing with Mockito and JUnit, managed builds with Maven, and handled deployment through Bamboo while working with REST APIs.",
       "pc_configurator": "Created web application designed to allow both professional and individual users to configure a PC by selecting a component, after which the application suggests only compatible components based on the initial selection.",
       "kaleidoscope": "Developed and monitored an application with a modern UI/UX design, aimed at showcasing the most stunning cinematic masterpieces through captivating images from the films. The experience is centered around colors, highlighting various tones and shades, and is uniquely branded as 'Kaleidoscope'."
     },
     "companies": {
+      "map_freelance": "Map - Freelance",
       "immocelia_freelance": "ImmoCelia - Freelance",
       "atchik_freelance": "Atchik - Freelance",
       "hasanatplus_freelance": "HasanatPlus - Freelance",

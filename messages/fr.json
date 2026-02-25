@@ -7,7 +7,7 @@
     "name": "Senouci Moulay",
     "location": "Toulouse",
     "email": "senouci.moulay@gmail.com",
-    "description": "Développeur web fullstack passionné avec plus de 2 ans d'expérience, créant des applications dynamiques et conviviales avec TypeScript, React, Next.js, Postgres, Java, et plus encore.",
+    "description": "Développeur web fullstack passionné avec 3 ans d'expérience, créant des applications dynamiques avec Java, Springboot, TypeScript, Angular, Next.js, Postgres,  et plus encore.",
     "cv": "Curriculum Vitae"
   },
   "Experience": {
@@ -18,15 +18,17 @@
       "fullstack_developer_student": "Développeur Fullstack"
     },
     "descriptions": {
+      "map_platform": "Design, conception, planification et développement complet d'une plateforme SaaS d'intelligence de marché destinée aux professionnels. Le projet couvre l'ensemble du cycle de développement, du design UI/UX à l'architecture technique et la mise en production. La plateforme intègre un système de veille automatisée par IA basé sur le RAG (Retrieval-Augmented Generation) pour l'analyse de marché, un tableau de bord analytique interactif avec cartographie géospatiale et exports Excel, une gestion de cas collaboratifs avec chat en temps réel, ainsi qu'un éditeur de workflows visuels pour le traitement et l'orchestration de données. L'application inclut également un système d'authentification et de gestion des accès utilisateurs, et un support multilingue complet.",
       "immocelia_platform": "Conception et développement d'une plateforme immobilière moderne pour l'agence ImmoCelia : création d'un site web épuré intégrant l'API Whise pour la synchronisation automatique des annonces immobilières. Implémentation d'un système d'authentification utilisateur avec gestion des favoris et formulaires de contact optimisés. Architecture orientée performance avec SEO technique avancé pour maximiser la visibilité en ligne de l'agence.",
       "atchik_modernization": "Dans le cadre d'un effort de modernisation et de mise à l'échelle, le projet s'est concentré sur la migration d'une application monolithique existante vers une architecture de microservices hébergée sur Google Cloud Platform. Cela comprenait la conception et le déploiement de services cloud-natifs utilisant Docker pour la conteneurisation, Kubernetes pour l'orchestration, et GitHub Actions pour l'intégration et la livraison continues.",
       "hasanatplus_platform": "Développement d'une plateforme de dons simplifiée permettant aux utilisateurs de financer plusieurs organisations via un seul paiement, avec allocation directe des fonds. Fourniture aux utilisateurs d'un accès à un tableau de bord avec représentations graphiques de leurs dons et possibilité de télécharger des factures.",
       "donation_platform": "Développement d'une plateforme de dons simplifiée permettant aux utilisateurs de financer plusieurs organisations via un seul paiement, avec allocation directe des fonds. Fourniture aux utilisateurs d'un accès à un tableau de bord avec représentations graphiques de leurs dons et possibilité de télécharger des factures.",
-      "air_france": "Développement d'applications web et d'interfaces iPad en collectant, analysant et traduisant les exigences métier en solutions fonctionnelles, améliorant l'expérience utilisateur et l'efficacité opérationnelle.",
+      "air_france": "Développement d'applications web et d'interfaces iPad utilisant Java, TypeScript, Spring Boot, Angular et Ionic. Application de méthodologies agiles (KANBAN) avec des outils comme Jira et Confluence. Mise en œuvre de tests unitaires et d'intégration avec Mockito et JUnit, gestion des builds avec Maven, et déploiement via Bamboo tout en travaillant avec des APIs REST.",
       "pc_configurator": "Création d'une application web permettant aux utilisateurs professionnels et particuliers de configurer un PC en sélectionnant un composant, après quoi l'application suggère uniquement des composants compatibles basés sur la sélection initiale.",
       "kaleidoscope": "Développement et suivi d'une application avec un design UI/UX moderne, visant à présenter les chefs-d'œuvre cinématographiques les plus époustouflants à travers des images captivantes des films. L'expérience est centrée sur les couleurs, mettant en valeur diverses teintes et nuances, et est uniquement marquée comme 'Kaleidoscope'."
     },
     "companies": {
+      "map_freelance": "Map - Freelance",
       "immocelia_freelance": "ImmoCelia - Freelance",
       "atchik_freelance": "Atchik - Freelance",
       "hasanatplus_freelance": "HasanatPlus - Freelance",
